@@ -1,7 +1,6 @@
 {
   "name": "web_calc",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +11,15 @@
   "dependencies": {
     "express": "^4.13.4",
     "morgan": "^1.6.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justin1dennison/js_calc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justin1dennison/js_calc/issues"
+  },
+  "homepage": "https://github.com/justin1dennison/js_calc#readme",
+  "description": ""
 }

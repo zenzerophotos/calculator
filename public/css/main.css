@@ -3,28 +3,34 @@
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  align-items: center;
 }
 
 #content{
-  
+
 }
 
 #calculator-body {
-  
+background: -webkit-linear-gradient(right,blue,red);
+border:1px solid black;
+width: 20em;
 }
 
 #display {
-  
+border: 1px solid black;
+width: 90%;
 }
 
 .key {
-  
+background-color: aqua;
 }
 
 .operator {
-  
+background-color: green;
 }
 
 #equal{
-  
+
 }
+
+.conta
