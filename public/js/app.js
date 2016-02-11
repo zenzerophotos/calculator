@@ -27,34 +27,34 @@ $(document).ready(function(){
       var output = $display.text()+num;
       $display.text(output);
     }
+  }
     //TODO: Keep it from allowing multiple decimal points.
 
-
-
-
-
-  //   var updateDisplay = alert ("it's broken")
-  //   var updateDisplay = addEventListener();
-  // console.log("AAHHHHH!")
-
-  //   var thing  = $('.num').text();
-  //  display.this('.num');
-  //  console.log('.num');
-
-  // $('.num').click (function();
-  // alert("clicked");
-  //    console.log(display);
-  }
   function divide(){
-
+    lastOperation = '/';
+    var displayText = $display.text();
+    var displayNum = parseFloat(displayText);
+    calculator.add(displayNum);
+    console.log('divide');
+    $display.text(0);
   }
 
   function multiply(){
-
+      lastOperation = 'X';
+      var displayText = $display.text();
+      var displayNum = parseFloat(displayText);
+      calculator.add(displayNum);
+      console.log('multply');
+      $display.text(0);
   }
 
   function subtract(){
-
+    lastOperation = '-';
+    var displayText = $display.text();
+    var displayNum = parseFloat(displayText);
+    calculator.add(displayNum);
+    console.log('sub');
+    $display.text(0);
   }
 
   function equal(){
@@ -65,10 +65,24 @@ $(document).ready(function(){
       var result = calculator.result();
       $display.text(result);
       calculator.reset();
-    } else if(lastOperation === '-'){
-
-    } else if(lastOperation === 'X'){
-
+    }
+     else if(lastOperation === '-'){
+      calculator.subtract(displayNum);
+      var result = calculator.result();
+      $display.text(result);
+      calculator.reset();
+    }
+    else if(lastOperation === 'X'){
+      calculator.multiply(displayNum);
+      var result = calculator.result();
+      $display.text(result);
+      calculator.reset();
+    }
+    else if(lastOperation === '/'){
+      calculator.divide(displayNum);
+      var result = calculator.result();
+      $display.text(result);
+      calculator.reset();
     }
   }
 
