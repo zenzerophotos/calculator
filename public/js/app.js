@@ -68,7 +68,7 @@ $(document).ready(function(){
     } else if(lastOperation === '-'){
 
     } else if(lastOperation === 'X'){
-      
+
     }
   }
 
@@ -82,7 +82,8 @@ $(document).ready(function(){
   }
 
   function clear(){
-
+    lastOperation= '';
+    $display.text(0);
   }
 
   function memAdd(){
