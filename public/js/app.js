@@ -19,30 +19,70 @@ $(document).ready(function(){
 
 
   function updateDisplay(){
-    
+  var num = $(this).text();
+    var displayText = $display.text();
+    if($display.text() === "0"){
+      $display.text(num);
+    } else {
+      var output = $display.text()+num;
+      $display.text(output);
+    }
+    //TODO: Keep it from allowing multiple decimal points.
+
+
+
+
+
+  //   var updateDisplay = alert ("it's broken")
+  //   var updateDisplay = addEventListener();
+  // console.log("AAHHHHH!")
+
+  //   var thing  = $('.num').text();
+  //  display.this('.num');
+  //  console.log('.num');
+
+  // $('.num').click (function();
+  // alert("clicked");
+  //    console.log(display);
   }
   function divide(){
-    
+
   }
 
   function multiply(){
-    
+
   }
 
   function subtract(){
-    
+
   }
 
   function equal(){
-    
+    var displayText = $display.text();
+    var displayNum = parseFloat(displayText);
+    if(lastOperation === '+'){
+      calculator.add(displayNum);
+      var result = calculator.result();
+      $display.text(result);
+      calculator.reset();
+    } else if(lastOperation === '-'){
+
+    } else if(lastOperation === 'X'){
+      
+    }
   }
 
   function plus(){
-    
+    lastOperation = '+';
+    var displayText = $display.text();
+    var displayNum = parseFloat(displayText);
+    calculator.add(displayNum);
+    console.log('adding!');
+    $display.text(0);
   }
 
   function clear(){
-    
+
   }
 
   function memAdd(){
@@ -58,9 +98,9 @@ $(document).ready(function(){
   }
 
   function memDisplay(){
-    
+
   }
 
-
+// button.on('click',updateDisplay);
 
 });
