@@ -18,6 +18,7 @@ $(document).ready(function(){
 
 
 
+
   function updateDisplay(){
   var num = $(this).text();
     var displayText = $display.text();

@@ -1,5 +1,11 @@
 
-
+.h1{
+  text-align: center;
+  color: #0c876c;
+  text-shadow: 2px 2px #3755a1;
+  outline-color: black
+  o
+}
 
 .row {
   width: 280px;
@@ -14,6 +20,7 @@
 .rowE{
   width: 487%;
   margin: 10px;
+
 }
 
 #content{
@@ -25,6 +32,9 @@ background: -webkit-linear-gradient(right,#0c876c,#3755a1);
 border:3px solid black;
 width: 20em;
 border-radius: 10px;
+font-weight: bolder;
+
+
 }
 
 #display {
