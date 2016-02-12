@@ -11,10 +11,10 @@ $(document).ready(function(){
   $('#multiply').on('click', multiply);
   $('#divide').on('click', divide);
   $('.num').on('click', updateDisplay);
-  $('mem-plus').on('click', memAdd);
-  $('mem-minus').on('click', memSub);
-  $('mem-recall').on('click', memDisplay);
-  $('mem-clear').on('click', memClear);
+  $('#mem-plus').on('click', memAdd);
+  $('#mem-minus').on('click', memSub);
+  $('#mem-recall').on('click', memDisplay);
+  $('#mem-clear').on('click', memClear);
 
 
 
@@ -99,21 +99,31 @@ $(document).ready(function(){
   function clear(){
     lastOperation= '';
     $display.text(0);
+    calculator.reset();
   }
 
   function memAdd(){
+    var disText = $display.text();
+    console.log($(this).text());
+    calculator.addToMemory(parseFloat(disText));
+    $display.text(0);
+    console.log(calculator.memory);
+    lastOperation = 'memAdd';
 
   }
 
   function memSub(){
-
+    var disText = $display.text();
+    calculator.
   }
 
   function memClear(){
-
+    lastOperation= '';
+    $display.text(0);
   }
 
   function memDisplay(){
+    $display.text(calculator.memory);
 
   }
 
