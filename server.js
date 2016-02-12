@@ -17,5 +17,5 @@ function home(req, res){
 }
 
 function listenCallback(){
-  console.log('Now listening on port ' + 8080);
+  console.log('Preparing to grow legs and run...' );
 }
