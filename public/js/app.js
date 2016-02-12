@@ -15,9 +15,11 @@ $(document).ready(function(){
   $('#mem-minus').on('click', memSub);
   $('#mem-recall').on('click', memDisplay);
   $('#mem-clear').on('click', memClear);
-
-
-
+  // $('#deadpool').on('click',deadpool);
+  //
+  // function deadpool(){
+  //   var deadpool = "https://youtu.be/rE4y4a8hqwY";
+  // }
 
   function updateDisplay(){
   var num = $(this).text();
@@ -114,12 +116,17 @@ $(document).ready(function(){
 
   function memSub(){
     var disText = $display.text();
-    calculator.
+    calculator.subtractFromMemory(parseFloat(disText));
+    $display.text(0);
+    console.log(calculator.memory);
+    lastOperation = 'memSub';
+
   }
 
   function memClear(){
     lastOperation= '';
     $display.text(0);
+
   }
 
   function memDisplay(){

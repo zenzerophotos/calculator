@@ -37,7 +37,7 @@ function addToMemory(num){
 }
 
 function subtractFromMemory(num){
-  this.current -= num;
+  this.memory -= num;
 }
 
 function clearMemory(){

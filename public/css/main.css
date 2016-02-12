@@ -1,10 +1,21 @@
+body{
+  background-image:url(zenzeroback.jpg);
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-color: #000709;
 
+}
+
+#content{
+  margin-top: 10em;
+  margin-right: 25em;
+}
 .h1{
   text-align: center;
   color: #0c876c;
   text-shadow: 2px 2px #3755a1;
-  outline-color: black
-  o
+  outline-color: black;
+  animation:
 }
 
 .row {
@@ -23,9 +34,11 @@
 
 }
 
-/*#content{
-  padding-top: 100px;
-}*/
+.rowF{
+  width: 487%;
+  margin: 10px;
+
+}
 
 #calculator-body {
 background: -webkit-linear-gradient(right,#0c876c,#3755a1);
@@ -75,4 +88,12 @@ background-color: #1acb44;
 
 #equal{
 
+}
+
+#deadpool{
+  color: black;
+}
+
+#deadpool:hover {
+  color: #1acb44;
 }
